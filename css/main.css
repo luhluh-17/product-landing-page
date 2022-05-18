@@ -15,7 +15,7 @@ body {
   height: 4rem;
   align-items: center;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0);
+  background: black;
 }
 
 #header-logo {
@@ -33,23 +33,61 @@ nav > a {
 }
 
 section {
-  height: 100vh;
+  padding: 0 2rem;
 }
 
 #section-home {
   background: url(../images/home-bg.jpg) no-repeat center center/cover;
   color: white;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 #section-home > h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 #section-home > h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
+}
+
+#section-description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6rem;
+}
+#section-description > h2 {
+  font-size: 2.5rem;
+}
+#section-description > p {
+  margin-top: 1rem;
+  padding: 0 5rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.img-description {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  margin: 2rem;
+}
+.description > h4 {
+  font-size: 2rem;
+}
+
+#image-tablet-color {
+  height: 360px;
+}
+
+#section-2 {
+  margin-top: 8rem;
 }
 
 /*# sourceMappingURL=main.css.map */
