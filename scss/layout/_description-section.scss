@@ -1,0 +1,37 @@
+@mixin section-description {
+  #subsection-colors {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 6rem;
+  
+    > h2 {
+      font-size: 2.5rem;
+    }
+  
+    > p {
+      margin-top: 1rem;
+      padding: 0 5rem;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+  
+  .img-description {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    margin: 2rem;
+  
+    > h4 {
+      font-size: 2rem;
+    }
+  }
+  
+  #image-tablet-color {
+    height: 360px;
+  }
+}

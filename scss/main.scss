@@ -34,60 +34,11 @@ section {
   padding: 0 2rem;
 }
 
-#section-home {
-  background: url(../images/home-bg.jpg) no-repeat center center/cover;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+@include section-home;
 
-  > h1 {
-    font-size: 5rem;
-  }
+@include section-description;
 
-  > h2 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-}
 
-#section-description {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 6rem;
-
-  > h2 {
-    font-size: 2.5rem;
-  }
-
-  > p {
-    margin-top: 1rem;
-    padding: 0 5rem;
-    font-size: 1.4rem;
-    text-align: center;
-  }
-}
-
-.img-description {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-.description {
-  margin: 2rem;
-
-  > h4 {
-    font-size: 2rem;
-  }
-}
-
-#image-tablet-color {
-  height: 360px;
-}
 
 #section-2 {
   margin-top: 8rem;

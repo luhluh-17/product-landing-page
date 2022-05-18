@@ -1,0 +1,21 @@
+@mixin section-home {
+  #section-home {
+    background: url(../images/home-bg.jpg) no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    > h1 {
+      font-size: 5rem;
+    }
+  
+    > h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
