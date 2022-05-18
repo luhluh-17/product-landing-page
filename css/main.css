@@ -32,10 +32,6 @@ nav > a {
   margin-right: 1rem;
 }
 
-section {
-  padding: 0 2rem;
-}
-
 #section-home {
   background: url(../images/home-bg.jpg) no-repeat center center/cover;
   color: white;
@@ -53,19 +49,19 @@ section {
   font-size: 1.5rem;
 }
 
-#subsection-colors {
+#subsection-device-color {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 6rem;
+  padding: 5rem;
 }
-#subsection-colors > h2 {
+#subsection-device-color > h2 {
   font-size: 2.5rem;
 }
-#subsection-colors > p {
+#subsection-device-color > p {
   margin-top: 1rem;
   padding: 0 5rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -86,8 +82,25 @@ section {
   height: 360px;
 }
 
-#section-2 {
-  margin-top: 8rem;
+#subsection-device-film {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+}
+#subsection-device-film > img {
+  margin-left: 2rem;
+}
+
+.film-description {
+  margin-left: 2rem;
+}
+.film-description h2 {
+  font-size: 2.5rem;
+}
+.film-description p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

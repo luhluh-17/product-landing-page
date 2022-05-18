@@ -30,16 +30,6 @@ nav {
   }
 }
 
-section {
-  padding: 0 2rem;
-}
-
 @include section-home;
 
 @include section-description;
-
-
-
-#section-2 {
-  margin-top: 8rem;
-}
