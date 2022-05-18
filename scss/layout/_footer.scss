@@ -1,0 +1,33 @@
+@use "../abstracts/mixins" as *;
+
+@mixin footer($color) {
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: #212121;
+    color: $color;
+
+    > h3 {
+      color: white;
+      margin-bottom: 0.5rem;
+    }
+
+    > h6 {
+      margin-top: 1rem;
+    }
+  }
+
+  #social-media {
+    > a {
+      color: $color;
+      margin: 0.3rem;
+      text-decoration: none;
+    }
+  }
+
+  @include social-media-hover;
+}
+

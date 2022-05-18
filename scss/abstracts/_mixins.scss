@@ -1,0 +1,9 @@
+@use "colors" as *;
+
+@mixin social-media-hover {
+  @each $name, $color in $social-media-colors {
+    ##{$name}:hover {
+      color: $color;
+    }
+  }
+}

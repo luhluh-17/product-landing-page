@@ -1,4 +1,8 @@
+@forward "abstracts/colors";
+@forward "abstracts/mixins";
 @forward "abstracts/reset";
+
 
 @forward "layout/home-section";
 @forward "layout/description-section";
+@forward "layout/footer";

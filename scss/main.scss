@@ -33,3 +33,5 @@ nav {
 @include section-home;
 
 @include section-description;
+
+@include footer($footer-color);

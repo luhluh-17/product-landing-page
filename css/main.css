@@ -103,4 +103,47 @@ nav > a {
   font-size: 1.2rem;
 }
 
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: #212121;
+  color: #919699;
+}
+#footer > h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+#footer > h6 {
+  margin-top: 1rem;
+}
+
+#social-media > a {
+  color: #919699;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+
+#twitter:hover {
+  color: #00acee;
+}
+
+#facebook:hover {
+  color: #3b5998;
+}
+
+#youtube:hover {
+  color: #c4302b;
+}
+
+#instagram:hover {
+  color: #405de6;
+}
+
+#tumblr:hover {
+  color: #34526f;
+}
+
 /*# sourceMappingURL=main.css.map */
