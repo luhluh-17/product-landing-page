@@ -8,6 +8,34 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.6rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
 #nav-bar {
   position: fixed;
   display: flex;
@@ -37,17 +65,18 @@ nav > a {
   background: url(../images/home-bg.jpg) no-repeat center center/cover;
   color: white;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 #section-home > h1 {
-  font-size: 5rem;
+  text-align: center;
 }
-#section-home > h2 {
+#section-home > h4 {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 #subsection-device-color {
@@ -56,13 +85,9 @@ nav > a {
   flex-direction: column;
   padding: 5rem;
 }
-#subsection-device-color > h2 {
-  font-size: 2.5rem;
-}
 #subsection-device-color > p {
   margin-top: 1rem;
   padding: 0 5rem;
-  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -74,9 +99,6 @@ nav > a {
 
 .description {
   margin: 2rem;
-}
-.description > h4 {
-  font-size: 2rem;
 }
 
 #image-tablet-color {
@@ -96,12 +118,8 @@ nav > a {
 .film-description {
   margin-left: 2rem;
 }
-.film-description h2 {
-  font-size: 2.5rem;
-}
 .film-description p {
   margin-top: 1rem;
-  font-size: 1.2rem;
 }
 
 #section-video {
@@ -110,9 +128,6 @@ nav > a {
   justify-content: center;
   flex-direction: column;
   padding: 4rem;
-}
-#section-video > h2 {
-  font-size: 2.5rem;
 }
 
 .video-container {
@@ -185,7 +200,7 @@ nav > a {
   background: #212121;
   color: #919699;
 }
-#footer > h3 {
+#footer > h5 {
   color: white;
   margin-bottom: 0.5rem;
 }

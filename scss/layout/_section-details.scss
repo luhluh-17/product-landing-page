@@ -1,4 +1,4 @@
-@mixin section-description {
+@mixin section-details {
   @include subsection-device-color;
   @include subsection-device-film;
 }
@@ -10,14 +10,9 @@
     flex-direction: column;
     padding: 5rem;
 
-    > h2 {
-      font-size: 2.5rem;
-    }
-
     > p {
       margin-top: 1rem;
       padding: 0 5rem;
-      font-size: 1.2rem;
       text-align: center;
     }
   }
@@ -30,10 +25,6 @@
 
   .description {
     margin: 2rem;
-
-    > h4 {
-      font-size: 2rem;
-    }
   }
 
   #image-tablet-color {
@@ -55,13 +46,9 @@
 
   .film-description {
     margin-left: 2rem;
-    h2 {
-      font-size: 2.5rem;
-    }
 
     p {
       margin-top: 1rem;
-      font-size: 1.2rem;
     }
   }
 }

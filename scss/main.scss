@@ -1,11 +1,5 @@
 @use "../scss/" as *;
 
-@include resetter;
-
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 #nav-bar {
   position: fixed;
   display: flex;
@@ -33,7 +27,7 @@ nav {
 
 @include section-home;
 
-@include section-description;
+@include section-details;
 
 @include section-video;
 

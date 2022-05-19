@@ -1,14 +1,16 @@
+@forward "base/reset";
+@forward "base/typography";
+
 @forward "abstracts/colors";
 @forward "abstracts/mixins";
-@forward "abstracts/reset";
 
 @forward "components/button";
 @forward "components/round-form";
 @forward "components/textfield";
 
 
-@forward "layout/home-section";
-@forward "layout/description-section";
+@forward "layout/section-home";
+@forward "layout/section-details";
 @forward "layout/section-video";
 @forward "layout/section-newsletter";
 @forward "layout/footer";
