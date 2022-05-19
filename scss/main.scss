@@ -14,6 +14,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background: rgba($color: black, $alpha: 1);
+  z-index: 9;
 }
 
 #header-logo {
@@ -33,5 +34,7 @@ nav {
 @include section-home;
 
 @include section-description;
+
+@include section-video;
 
 @include footer($footer-color);
