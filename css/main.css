@@ -137,6 +137,45 @@ nav > a {
   height: 100%;
 }
 
+#section-newsletter {
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.btn {
+  background: #00bfd6;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.textfield {
+  border: none;
+  padding: 0.5rem;
+  width: 60%;
+}
+.textfield:focus {
+  outline: none;
+}
+
+.form-round {
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 40%;
+}
+
 #footer {
   display: flex;
   align-items: center;
@@ -161,15 +200,15 @@ nav > a {
 }
 
 #twitter:hover {
-  color: #00acee;
+  color: #55ACEE;
 }
 
 #facebook:hover {
-  color: #3b5998;
+  color: #1778F2;
 }
 
 #youtube:hover {
-  color: #c4302b;
+  color: #FF0000;
 }
 
 #instagram:hover {
@@ -177,7 +216,7 @@ nav > a {
 }
 
 #tumblr:hover {
-  color: #34526f;
+  color: #35465C;
 }
 
 /*# sourceMappingURL=main.css.map */

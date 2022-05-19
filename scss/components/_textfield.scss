@@ -1,0 +1,10 @@
+@mixin textfield {
+  .textfield {
+    border: none;
+    padding: 0.5rem;
+    width: 60%;
+    &:focus {
+      outline: none;
+    }
+  }
+}

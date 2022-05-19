@@ -37,4 +37,9 @@ nav {
 
 @include section-video;
 
+@include section-newsletter;
+@include button;
+@include textfield;
+@include form-round;
+
 @include footer($footer-color);

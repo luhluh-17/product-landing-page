@@ -2,8 +2,13 @@
 @forward "abstracts/mixins";
 @forward "abstracts/reset";
 
+@forward "components/button";
+@forward "components/round-form";
+@forward "components/textfield";
+
 
 @forward "layout/home-section";
 @forward "layout/description-section";
 @forward "layout/section-video";
+@forward "layout/section-newsletter";
 @forward "layout/footer";
