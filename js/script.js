@@ -17,16 +17,23 @@ function toggleTheme() {
 }
 
 window.addEventListener("scroll", function (e) {
-  var nav = document.getElementById("header-nav");
-  if (
-    document.documentElement.scrollTop ||
-    document.body.scrollTop > window.innerHeight
-  ) {
+  const nav = document.getElementById("header-nav");
+  const isActive = document.querySelector(".active");
+
+  if (isActive) {
     nav.classList.add("nav-colored");
     nav.classList.remove("nav-transparent");
   } else {
-    nav.classList.add("nav-transparent");
-    nav.classList.remove("nav-colored");
+    if (
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > window.innerHeight
+    ) {
+      nav.classList.add("nav-colored");
+      nav.classList.remove("nav-transparent");
+    } else {
+      nav.classList.add("nav-transparent");
+      nav.classList.remove("nav-colored");
+    }
   }
 });
 

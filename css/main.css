@@ -151,7 +151,7 @@ a {
 }
 
 .nav-link {
-  transition: 0.7s ease;
+  transition: 0.5s ease;
 }
 .nav-link:hover {
   color: #00bfd6;
@@ -163,11 +163,13 @@ a {
 
 .nav-colored {
   background: #212121;
+  transition: 0.5s ease;
   box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .nav-transparent {
   background: rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
 }
 
 .hamburger {
@@ -273,6 +275,10 @@ a {
 .dark-mode {
   background-color: #212121;
   color: white;
+}
+
+main > :nth-child(odd) {
+  background: #f4f4f4;
 }
 
 section {

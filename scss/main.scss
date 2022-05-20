@@ -5,6 +5,9 @@
   color: white;
 }
 
+main > :nth-child(odd) {
+  background: $secondary-light-bg;
+}
 
 section {
   display: flex;
