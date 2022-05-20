@@ -4,13 +4,13 @@ main > :nth-child(odd) {
   background: $secondary-light-bg;
 }
 
-// section {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-//   padding: $padding;
-// }
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: $padding;
+}
 
 #section-home {
   background: url("../images/home-bg.jpg") no-repeat center center/cover;
@@ -37,36 +37,18 @@ main > :nth-child(odd) {
 }
 
 #section-video {
-  .video-container {
-    margin-top: $sm-padding;
-    width: 80%;
-  }
-
-  .iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-  }
-
-  #video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+  > h2 {
+    margin: $margin;
   }
 }
 
 #section-specification{
-  align-items: flex-start;
-  justify-content: flex-start;
+  display: block;
   padding: 10rem 6rem;
 
   > div {
     display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -74,7 +56,7 @@ main > :nth-child(odd) {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: $sm-padding;
+  padding: $sm-padding;
   flex-grow: 2;
 
   > div {
@@ -90,7 +72,7 @@ main > :nth-child(odd) {
 }
 
 #section-newsletter {
-  padding: 2rem;
+  padding: $sm-padding;
 }
 
 @include footer($footer-color);

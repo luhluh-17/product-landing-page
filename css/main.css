@@ -54,6 +54,28 @@ p {
   max-width: 50%;
 }
 
+.video-container {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .btn {
   background: #00bfd6;
   border: none;
@@ -116,6 +138,14 @@ main > :nth-child(odd) {
   background: #f4f4f4;
 }
 
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+
 #section-home {
   background: url("../images/home-bg.jpg") no-repeat center center/cover;
   color: white;
@@ -138,40 +168,24 @@ main > :nth-child(odd) {
   flex-direction: row;
 }
 
-#section-video .video-container {
-  margin-top: 2rem;
-  width: 80%;
-}
-#section-video .iframe-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%;
-}
-#section-video #video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+#section-video > h2 {
+  margin: 1rem;
 }
 
 #section-specification {
-  align-items: flex-start;
-  justify-content: flex-start;
+  display: block;
   padding: 10rem 6rem;
 }
 #section-specification > div {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .specification-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 2rem;
+  padding: 2rem;
   flex-grow: 2;
 }
 .specification-content > div {
