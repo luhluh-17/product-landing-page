@@ -134,6 +134,11 @@ nav > a:hover {
   color: #00bfd6;
 }
 
+.dark-mode {
+  background-color: #212121;
+  color: white;
+}
+
 main > :nth-child(odd) {
   background: #f4f4f4;
 }

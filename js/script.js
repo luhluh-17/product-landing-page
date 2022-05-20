@@ -9,3 +9,9 @@
     domEmail.textContent = "Updates will be sent to " + email;
   }
 })();
+
+document.getElementById("theme-btn").addEventListener("click", toggleTheme);
+function toggleTheme() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

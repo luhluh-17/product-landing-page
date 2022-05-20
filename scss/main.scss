@@ -1,5 +1,10 @@
 @use "../scss/" as *;
 
+.dark-mode {
+  background-color: #212121;
+  color: white;
+}
+
 main > :nth-child(odd) {
   background: $secondary-light-bg;
 }
