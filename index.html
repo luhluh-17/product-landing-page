@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="https://kit.fontawesome.com/0869152999.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0869152999.js" crossorigin="anonymous" defer></script>
   <title>Huion Kamvas 13</title>
 </head>
 
@@ -17,10 +17,10 @@
   <header id="nav-bar">
     <img id="header-logo" src="images/huion-white.svg" alt="Company Logo">
     <nav>
-      <a class="nav-link" href="#section-home">Home</a>
-      <a class="nav-link" href="#section-description">Details</a>
-      <a class="nav-link" href="#section-2">Specification</a>
-      <a class="nav-link" href="#section-3">Product</a>
+      <a class="nav-link smooth-scroll" href="#section-home">Home</a>
+      <a class="nav-link smooth-scroll" href="#section-details">Details</a>
+      <a class="nav-link smooth-scroll" href="#section-2">Specification</a>
+      <a class="nav-link smooth-scroll" href="#section-3">Product</a>
     </nav>
   </header>
   <section id="section-home">
@@ -29,7 +29,7 @@
     <h4>Easier Connection, Better Convenience and Higher Efficiency.</h4>
   </section>
 
-  <section id="section-description">
+  <section id="section-details">
 
     <section id="subsection-device-color">
       <h2>Impressed at first sight.</h2>
@@ -82,8 +82,8 @@
     <h2>Turn inspiration into reality.</h2>
     <div class="video-container">
       <div class="iframe-container">
-        <iframe id="video" src="https://www.youtube.com/embed/c90Gy5JOhqw"
-          title="Huion Kamvas 13" frameborder="0" allowfullscreen>
+        <iframe id="video" src="https://www.youtube.com/embed/c90Gy5JOhqw" title="Huion Kamvas 13" frameborder="0"
+          allowfullscreen>
         </iframe>
       </div>
     </div>
@@ -92,8 +92,9 @@
   <section id="section-newsletter">
     <h5>Get Up To Date</h5>
     <h4>Subscrive to our newsletter</h4>
-    <form action="#" class="form-round">
-      <input type="email" id="email" class="textfield" name="email" placeholder="Enter your email*">
+
+    <form action="pages/response.html" target="_blank" method="get" class="form-round">
+      <input type="email" id="email" class="textfield" name="email" placeholder="Enter your email*" required>
       <button id="submit" class="btn">Subscribe now</button>
     </form>
   </section>
