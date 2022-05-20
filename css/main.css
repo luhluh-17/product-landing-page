@@ -85,6 +85,17 @@ p {
   height: 100%;
 }
 
+.dark-mode {
+  background-color: #3b3b3b;
+  color: white;
+}
+.dark-mode > main > :nth-child(odd) {
+  background: #2e2e2e;
+}
+.dark-mode p {
+  color: #dedede;
+}
+
 .btn {
   background: #00bfd6;
   border: none;
@@ -314,17 +325,6 @@ footer > h5 {
     left: 0;
   }
 }
-.dark-mode-1 {
-  background-color: #3b3b3b;
-  color: white;
-}
-.dark-mode-1 > main > :nth-child(odd) {
-  background: #2e2e2e;
-}
-.dark-mode-1 p {
-  color: #dedede;
-}
-
 main > :nth-child(odd) {
   background: #f4f4f4;
 }

@@ -1,0 +1,14 @@
+@use  "../abstracts/variables" as *;
+
+.dark-mode {
+  background-color: $dark-color-l1;
+  color: white;
+
+  > main > :nth-child(odd) {
+    background: $dark-color-l2;
+  }
+  
+  p {
+    color: $secondary-text-color-light;
+  }
+}
