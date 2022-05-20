@@ -114,6 +114,11 @@ p {
   outline: none;
 }
 
+header {
+  z-index: 9;
+  padding: 0 1rem;
+}
+
 #nav-bar {
   position: fixed;
   display: flex;
@@ -121,18 +126,12 @@ p {
   height: 4rem;
   align-items: center;
   justify-content: space-between;
-  background: black;
-  z-index: 9;
 }
 
 #header-logo {
-  margin-left: 2rem;
   width: 8.5rem;
 }
 
-nav {
-  margin-right: 2rem;
-}
 nav > a {
   color: white;
   text-decoration: none;
@@ -140,6 +139,15 @@ nav > a {
 }
 nav > a:hover {
   color: #00bfd6;
+}
+
+.nav-colored {
+  background: #212121;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15), 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-transparent {
+  background: rgba(0, 0, 0, 0);
 }
 
 .dark-mode {

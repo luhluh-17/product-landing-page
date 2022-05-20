@@ -1,0 +1,6 @@
+$shadow-light: rgba($color: black, $alpha: 0.15);
+$shadow-dark: rgba($color: black, $alpha: 0.1);
+
+@mixin shadow {
+  box-shadow: 0 0.5rem 0.5rem $shadow-light, 0 0.5rem 0.5rem $shadow-dark;
+}

@@ -1,4 +1,10 @@
 @use "../abstracts/variables" as *;
+@use "../components/shadow" as effects;
+
+header {
+  z-index: 9;
+  padding: 0 1rem;
+}
 
 #nav-bar {
   position: fixed;
@@ -7,17 +13,13 @@
   height: 4rem;
   align-items: center;
   justify-content: space-between;
-  background: rgba($color: black, $alpha: 1);
-  z-index: 9;
 }
 
 #header-logo {
-  margin-left: 2rem;
   width: 8.5rem;
 }
 
 nav {
-  margin-right: 2rem;
   > a {
     color: white;
     text-decoration: none;
@@ -27,4 +29,13 @@ nav {
       color: $primary-color;
     }
   }
+}
+
+.nav-colored {
+  background: $dark-color;
+  @include effects.shadow;
+}
+
+.nav-transparent {
+  background: rgba($color: black, $alpha: 0);
 }
