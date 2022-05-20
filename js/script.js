@@ -17,7 +17,7 @@ function toggleTheme() {
 }
 
 window.addEventListener("scroll", function (e) {
-  var nav = document.getElementById("nav-bar");
+  var nav = document.getElementById("header-nav");
   if (
     document.documentElement.scrollTop ||
     document.body.scrollTop > window.innerHeight
@@ -29,3 +29,18 @@ window.addEventListener("scroll", function (e) {
     nav.classList.remove("nav-colored");
   }
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("nav-link").forEach((item) =>
+  item.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
