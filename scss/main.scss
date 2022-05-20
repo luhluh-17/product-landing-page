@@ -5,9 +5,6 @@
   color: white;
 }
 
-main > :nth-child(odd) {
-  background: $secondary-light-bg;
-}
 
 section {
   display: flex;
@@ -22,9 +19,17 @@ section {
   color: white;
   height: 100vh;
   width: 100%;
+
+  > h4 {
+    text-align: center;
+  }
 }
 
 #section-device-color {
+  > h2 {
+    text-align: center;
+  }
+
   > p {
     padding: 0 $padding;
     text-align: center;
@@ -39,10 +44,12 @@ section {
 
 #section-device-film {
   flex-direction: row;
+  text-align: left;
 }
 
 #section-video {
   > h2 {
+    text-align: center;
     margin: $margin;
   }
 }
@@ -62,12 +69,6 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   padding: $sm-padding;
-  flex-grow: 2;
-
-  > div {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 #section-product {

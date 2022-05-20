@@ -15,6 +15,7 @@ body {
 h1 {
   font-size: 5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 h2 {
@@ -185,6 +186,10 @@ a {
 
 /* Smartphones */
 @media only screen and (max-width: 500px) {
+  :root {
+    font-size: 8px;
+  }
+
   .hamburger {
     display: block;
   }
@@ -194,11 +199,11 @@ a {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translatey(8px) rotate(45deg);
+    transform: translatey(0.5rem) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translatey(-8px) rotate(-45deg);
+    transform: translatey(-0.5rem) rotate(-45deg);
   }
 
   .nav-menu {
@@ -224,6 +229,10 @@ a {
 }
 /* Tablet */
 @media (min-width: 501px) and (max-width: 768px) {
+  :root {
+    font-size: 12px;
+  }
+
   .hamburger {
     display: block;
   }
@@ -233,11 +242,11 @@ a {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translatey(8px) rotate(45deg);
+    transform: translatey(0.5rem) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translatey(-8px) rotate(-45deg);
+    transform: translatey(-0.5rem) rotate(-45deg);
   }
 
   .nav-menu {
@@ -261,16 +270,9 @@ a {
     left: 0;
   }
 }
-/* Normal */
-/* Widescreen */
-/* Landscape */
 .dark-mode {
   background-color: #212121;
   color: white;
-}
-
-main > :nth-child(odd) {
-  background: #f4f4f4;
 }
 
 section {
@@ -287,7 +289,13 @@ section {
   height: 100vh;
   width: 100%;
 }
+#section-home > h4 {
+  text-align: center;
+}
 
+#section-device-color > h2 {
+  text-align: center;
+}
 #section-device-color > p {
   padding: 0 5rem;
   text-align: center;
@@ -301,9 +309,11 @@ section {
 
 #section-device-film {
   flex-direction: row;
+  text-align: left;
 }
 
 #section-video > h2 {
+  text-align: center;
   margin: 1rem;
 }
 
@@ -321,11 +331,6 @@ section {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 2rem;
-  flex-grow: 2;
-}
-.specification-content > div {
-  display: flex;
-  justify-content: space-between;
 }
 
 #section-product {

@@ -24,11 +24,11 @@
   }
 
   .hamburger.active .bar:nth-child(1){
-    transform: translatey(8px) rotate(45deg);
+    transform: translatey(0.5rem) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3){
-    transform: translatey(-8px) rotate(-45deg);
+    transform: translatey(-0.5rem) rotate(-45deg);
   }
 
   .nav-menu {
