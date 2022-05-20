@@ -2,7 +2,7 @@
   const searchParams = new URLSearchParams(window.location.search);
   const email = searchParams.get("email");
   console.log(email);
-  const domEmail = document.querySelector("#response");
+  const domEmail = document.querySelector("[data-email]");
   console.log(domEmail);
 
   if (domEmail) {
@@ -16,24 +16,18 @@ function toggleTheme() {
   element.classList.toggle("dark-mode");
 }
 
-window.addEventListener("scroll", function (e) {
+window.addEventListener("scroll", () => {
   const nav = document.getElementById("header-nav");
-  const isActive = document.querySelector(".active");
 
-  if (isActive) {
+  if (
+    document.documentElement.scrollTop ||
+    document.body.scrollTop > window.innerHeight
+  ) {
     nav.classList.add("nav-colored");
     nav.classList.remove("nav-transparent");
   } else {
-    if (
-      document.documentElement.scrollTop ||
-      document.body.scrollTop > window.innerHeight
-    ) {
-      nav.classList.add("nav-colored");
-      nav.classList.remove("nav-transparent");
-    } else {
-      nav.classList.add("nav-transparent");
-      nav.classList.remove("nav-colored");
-    }
+    nav.classList.add("nav-transparent");
+    nav.classList.remove("nav-colored");
   }
 });
 
@@ -45,7 +39,7 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll("nav-link").forEach((item) =>
+document.querySelectorAll(".nav-link").forEach((item) =>
   item.addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
