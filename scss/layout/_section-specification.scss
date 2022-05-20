@@ -1,0 +1,25 @@
+@mixin section-specification {
+  #section-specification{
+    background: #f4f4f4;
+    padding: 10rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      display: flex;
+    }
+  }
+
+  .specification-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 2;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

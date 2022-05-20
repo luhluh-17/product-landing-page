@@ -129,22 +129,6 @@ nav > a:hover {
   margin-top: 1rem;
 }
 
-#section-product {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5rem;
-}
-
-.image-container {
-  margin-left: 2rem;
-}
-
-.product-image {
-  width: auto;
-  height: 50rem;
-}
-
 #section-video {
   display: flex;
   align-items: center;
@@ -173,6 +157,43 @@ nav > a:hover {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+#section-specification {
+  background: #f4f4f4;
+  padding: 10rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+#section-specification > div {
+  display: flex;
+}
+
+.specification-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 2;
+}
+.specification-content > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.image-container {
+  margin-left: 2rem;
+}
+
+.product-image {
+  width: auto;
+  height: 50rem;
 }
 
 #section-newsletter {

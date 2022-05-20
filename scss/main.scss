@@ -38,8 +38,11 @@ nav {
 @include section-device-color;
 @include section-device-film;
 
-@include section-product;
 @include section-video;
+
+@include section-specification;
+
+@include section-product;
 
 @include section-newsletter;
 @include button;
