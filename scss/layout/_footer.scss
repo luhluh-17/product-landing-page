@@ -1,29 +1,27 @@
+@use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-@mixin footer($color) {
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 2rem;
-    background: #212121;
-    color: $color;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  background: $dark-color;
+  color: $footer-color;
 
-    > h5 {
-      color: white;
-    }
+  > h5 {
+    color: white;
   }
-
-  #social-media {
-    margin-top: 0.5rem;
-    > a {
-      color: $color;
-      margin: 0.3rem;
-      text-decoration: none;
-    }
-  }
-
-  @include social-media-hover;
 }
 
+#social-media {
+  margin-top: 0.5rem;
+  > a {
+    color: $footer-color;
+    margin: 0.3rem;
+    text-decoration: none;
+  }
+}
+
+@include social-media-hover;

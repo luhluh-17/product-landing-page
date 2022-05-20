@@ -12,8 +12,11 @@
 
 document.getElementById("theme-btn").addEventListener("click", toggleTheme);
 function toggleTheme() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  const element = document.body;
+  element.classList.toggle("dark-mode-1");
+  
+  const sectionFilm = document.getElementById("#section-device-film");
+  sectionFilm.classList.toggle("dark-mode-2");
 }
 
 window.addEventListener("scroll", function (e) {
