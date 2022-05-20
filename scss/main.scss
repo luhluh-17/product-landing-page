@@ -27,7 +27,7 @@ nav {
     text-decoration: none;
     margin-right: 1rem;
 
-    &:hover{
+    &:hover {
       color: $primary-color;
     }
   }
@@ -35,8 +35,10 @@ nav {
 
 @include section-home;
 
-@include section-details;
+@include section-device-color;
+@include section-device-film;
 
+@include section-product;
 @include section-video;
 
 @include section-newsletter;

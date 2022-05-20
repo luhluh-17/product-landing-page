@@ -129,6 +129,22 @@ nav > a:hover {
   margin-top: 1rem;
 }
 
+#section-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+.image-container {
+  margin-left: 2rem;
+}
+
+.product-image {
+  width: auto;
+  height: 50rem;
+}
+
 #section-video {
   display: flex;
   align-items: center;
