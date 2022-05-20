@@ -1,4 +1,4 @@
-@use "colors" as *;
+@use "variables" as *;
 
 @mixin social-media-hover {
   @each $name, $color in $social-media-colors {

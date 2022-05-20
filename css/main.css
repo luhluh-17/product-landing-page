@@ -4,12 +4,17 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-size: 5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -18,6 +23,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  margin-top: 1rem;
 }
 
 h4 {
@@ -30,14 +36,52 @@ h5 {
 
 h6 {
   font-size: 0.6rem;
+  margin-top: 1rem;
 }
 
 p {
+  margin-top: 0.5rem;
   font-size: 1.2rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.description {
+  margin: 1rem;
+}
+
+.img-responsive {
+  margin: 1rem;
+  height: auto;
+  max-width: 50%;
+}
+
+.btn {
+  background: #00bfd6;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-round {
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  width: 50%;
+}
+
+.textfield {
+  border: none;
+  padding: 0.5rem;
+  width: 60%;
+}
+.textfield:focus {
+  outline: none;
 }
 
 #nav-bar {
@@ -53,7 +97,7 @@ html {
 
 #header-logo {
   margin-left: 2rem;
-  width: 9rem;
+  width: 8.5rem;
 }
 
 nav {
@@ -68,88 +112,43 @@ nav > a:hover {
   color: #00bfd6;
 }
 
+main > :nth-child(odd) {
+  background: #f4f4f4;
+}
+
 #section-home {
-  background: url(../images/home-bg.jpg) no-repeat center center/cover;
+  background: url("../images/home-bg.jpg") no-repeat center center/cover;
   color: white;
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#section-home > h1 {
-  text-align: center;
-}
-#section-home > h4 {
-  margin-top: 1rem;
-  text-align: center;
 }
 
-#subsection-device-color {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 5rem;
-}
-#subsection-device-color > p {
-  margin-top: 1rem;
+#section-device-color > p {
   padding: 0 5rem;
   text-align: center;
 }
 
-.img-description {
+.secondary-content {
   margin-top: 2rem;
   display: flex;
   align-items: center;
 }
 
-.description {
-  margin: 2rem;
+#section-device-film {
+  flex-direction: row;
 }
 
-#image-tablet-color {
-  height: 360px;
-}
-
-#subsection-device-film {
-  background: #f4f4f4;
-  display: flex;
-  align-items: center;
-  padding: 5rem;
-}
-#subsection-device-film > img {
-  margin-left: 2rem;
-}
-
-.film-description {
-  margin-left: 2rem;
-}
-.film-description p {
-  margin-top: 1rem;
-}
-
-#section-video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 4rem;
-}
-
-.video-container {
+#section-video .video-container {
   margin-top: 2rem;
   width: 80%;
 }
-
-.iframe-container {
+#section-video .iframe-container {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
 }
-
-#video {
+#section-video #video {
   position: absolute;
   top: 0;
   left: 0;
@@ -160,10 +159,9 @@ nav > a:hover {
 }
 
 #section-specification {
-  background: #f4f4f4;
-  padding: 10rem 5rem;
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10rem 6rem;
 }
 #section-specification > div {
   display: flex;
@@ -173,6 +171,7 @@ nav > a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 2rem;
   flex-grow: 2;
 }
 .specification-content > div {
@@ -181,61 +180,16 @@ nav > a:hover {
 }
 
 #section-product {
-  display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   padding: 5rem;
 }
 
-.image-container {
-  margin-left: 2rem;
-}
-
-.product-image {
-  width: auto;
-  height: 50rem;
-}
-
 #section-newsletter {
-  background: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   padding: 2rem;
 }
 
-.btn {
-  background: #00bfd6;
-  border: none;
-  border-radius: 0.5rem;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.textfield {
-  border: none;
-  padding: 0.5rem;
-  width: 60%;
-}
-.textfield:focus {
-  outline: none;
-}
-
-.form-round {
-  background: white;
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem;
-  margin: 1rem 0;
-  width: 40%;
-}
-
-#footer {
+footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,14 +198,13 @@ nav > a:hover {
   background: #212121;
   color: #919699;
 }
-#footer > h5 {
+footer > h5 {
   color: white;
-  margin-bottom: 0.5rem;
-}
-#footer > h6 {
-  margin-top: 1rem;
 }
 
+#social-media {
+  margin-top: 0.5rem;
+}
 #social-media > a {
   color: #919699;
   margin: 0.3rem;

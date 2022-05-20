@@ -1,15 +1,13 @@
-@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
 
-@mixin button {
-  .btn {
-    background: $primary-color;
-    border: none;
-    border-radius: 0.5rem;
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.btn {
+  background: $primary-color;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 

@@ -1,52 +1,96 @@
 @use "../scss/" as *;
 
-html {
-  scroll-behavior: smooth;
+main > :nth-child(odd) {
+  background: $secondary-light-bg;
 }
 
-#nav-bar {
-  position: fixed;
-  display: flex;
+// section {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   padding: $padding;
+// }
+
+#section-home {
+  background: url("../images/home-bg.jpg") no-repeat center center/cover;
+  color: white;
+  height: 100vh;
   width: 100%;
-  height: 4rem;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba($color: black, $alpha: 1);
-  z-index: 9;
 }
 
-#header-logo {
-  margin-left: 2rem;
-  width: 9rem;
-}
-
-nav {
-  margin-right: 2rem;
-  > a {
-    color: white;
-    text-decoration: none;
-    margin-right: 1rem;
-
-    &:hover {
-      color: $primary-color;
-    }
+#section-device-color {
+  > p {
+    padding: 0 $padding;
+    text-align: center;
   }
 }
 
-@include section-home;
+.secondary-content {
+  margin-top: $sm-padding;
+  display: flex;
+  align-items: center;
+}
 
-@include section-device-color;
-@include section-device-film;
+#section-device-film {
+  flex-direction: row;
+}
 
-@include section-video;
+#section-video {
+  .video-container {
+    margin-top: $sm-padding;
+    width: 80%;
+  }
 
-@include section-specification;
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
 
-@include section-product;
+  #video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
-@include section-newsletter;
-@include button;
-@include textfield;
-@include form-round;
+#section-specification{
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10rem 6rem;
+
+  > div {
+    display: flex;
+  }
+}
+
+.specification-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: $sm-padding;
+  flex-grow: 2;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#section-product {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $padding;
+}
+
+#section-newsletter {
+  padding: 2rem;
+}
 
 @include footer($footer-color);

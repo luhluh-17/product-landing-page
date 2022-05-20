@@ -18,26 +18,26 @@
     <img id="header-logo" src="images/huion-white.svg" alt="Company Logo">
     <nav>
       <a class="nav-link" href="#section-home">Home</a>
-      <a class="nav-link" href="#section-details">Details</a>
+      <a class="nav-link" href="#section-device-color">Description</a>
       <a class="nav-link" href="#section-specification">Specification</a>
       <a class="nav-link" href="#section-product">Product</a>
     </nav>
   </header>
-  <section id="section-home">
-    <h4>Pen Display Kamvas 13</h4>
-    <h1>Ace in Approachable.</h1>
-    <h4>Easier Connection, Better Convenience and Higher Efficiency.</h4>
-  </section>
 
-  <section id="section-details">
+  <main>
+    <section id="section-home">
+      <h4>Pen Display Kamvas 13</h4>
+      <h1>Ace in Approachable.</h1>
+      <h4>Easier Connection, Better Convenience and Higher Efficiency.</h4>
+    </section>
 
-    <section id="subsection-device-color">
+    <section id="section-device-color">
       <h2>Impressed at first sight.</h2>
-      <p>
+      <p class="description">
         The creative Kamvas 13 with eye-catching appearance is available in 3 colors, Midnight Green, Violet Purple and
         Cosmo Black, which offers more choices for users to fit their styles.
       </p>
-      <div class="img-description">
+      <div class="secondary-content">
         <div>
           <div class="description">
             <h4>Cosmo Black</h4>
@@ -60,13 +60,13 @@
             </p>
           </div>
         </div>
-        <img id="image-tablet-color" src="images/tablet-black.jpg" alt="Tablet sample colors">
+        <img class="img-responsive" src="images/tablet-black.jpg" alt="Tablet sample colors">
       </div>
     </section>
 
-    <section id="subsection-device-film">
-      <img src="images/product-film.png" alt="product with anti-glare film">
-      <div class="film-description">
+    <section id="section-device-film">
+      <img class="img-responsive" src="images/product-film.png" alt="product with anti-glare film">
+      <div class="description">
         <h2>Full Lamination,</h2>
         <h2>Minimum Parallax</h2>
         <p>
@@ -76,70 +76,68 @@
         </p>
       </div>
     </section>
-  </section>
 
-  <section id="section-video">
-    <h2>Turn inspiration into reality.</h2>
-    <div class="video-container">
-      <div class="iframe-container">
-        <iframe id="video" src="https://www.youtube.com/embed/c90Gy5JOhqw" title="Huion Kamvas 13" frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </div>
-  </section>
-
-  <section id="section-specification">
-    <h3>Appearance</h3>
-    <div>
-      <div class="specification-content">
-        <div>
-          <p>Color:</p>
-          <p>Cosmo Black, Midnight Green, Violet Purple</p>
-        </div>
-        <div>
-          <p>Dimension:</p>
-          <p>366.5 x 217.4 x 11.8mm</p>
-        </div>
-        <div>
-          <p>Workspace:</p>
-          <p>293.76 x 165.24mm</p>
-        </div>
-        <div>
-          <p>Net Weight:</p>
-          <p>980g</p>
-        </div>
-        <div>
-          <p>Video Interface:</p>
-          <p>USB-C, Full-Featured USB-C</p>
+    <section id="section-video">
+      <h2>Turn inspiration into reality.</h2>
+      <div class="video-container">
+        <div class="iframe-container">
+          <iframe id="video" src="https://www.youtube.com/embed/c90Gy5JOhqw?rel=0" title="Huion Kamvas 13"
+            frameborder="0" allowfullscreen>
+          </iframe>
         </div>
       </div>
-      <img src="images/specs-appearance.png" alt="device specification for appearance">
-    </div>
-  </section>
+    </section>
 
-  <section id="section-product">
-    <div>
-      <h2>Kamvas 13 GS1331</h2>
-      <p>Your first pen display. Full-featured USB-C Connection. PenTech 3.0 Technology. High Cost-efficiency</p>
-      <h3>$ 239.00</h3>
-    </div>
-    <div class="image-container">
-      <img class="product-image" src="images/kamvas-product.png" alt="kamvas 13">
-    </div>
-  </section>
+    <section id="section-specification">
+      <h3>Appearance</h3>
+      <div>
+        <div class="specification-content">
+          <div>
+            <p>Color:</p>
+            <p>Cosmo Black, Midnight Green, Violet Purple</p>
+          </div>
+          <div>
+            <p>Dimension:</p>
+            <p>366.5 x 217.4 x 11.8mm</p>
+          </div>
+          <div>
+            <p>Workspace:</p>
+            <p>293.76 x 165.24mm</p>
+          </div>
+          <div>
+            <p>Net Weight:</p>
+            <p>980g</p>
+          </div>
+          <div>
+            <p>Video Interface:</p>
+            <p>USB-C, Full-Featured USB-C</p>
+          </div>
+        </div>
+        <img src="images/specs-appearance.png" alt="device specification for appearance">
+      </div>
+    </section>
 
-  <section id="section-newsletter">
-    <h5>Get Up To Date</h5>
-    <h4>Subscrive to our newsletter</h4>
+    <section id="section-product">
+      <div>
+        <h2>Kamvas 13 GS1331</h2>
+        <p>Your first pen display. Full-featured USB-C Connection. PenTech 3.0 Technology. High Cost-efficiency</p>
+        <h3>$ 239.00</h3>
+      </div>
+      <img class="img-responsive" src="images/kamvas-product.png" alt="kamvas 13">
+    </section>
 
-    <form action="pages/response.html" target="_blank" method="get" class="form-round">
-      <input type="email" id="email" class="textfield" name="email" placeholder="Enter your email*" required>
-      <button id="submit" class="btn">Subscribe now</button>
-    </form>
-  </section>
+    <section id="section-newsletter">
+      <h5>Get Up To Date</h5>
+      <h4>Subscrive to our newsletter</h4>
 
-  <footer id="footer">
+      <form action="pages/response.html" target="_blank" method="get" class="form-round">
+        <input type="email" id="email" class="textfield" name="email" placeholder="Enter your email*" required>
+        <button id="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
     <h5>Follow Us</h5>
     <div id="social-media">
       <a id="twitter" href="https://twitter.com/HuionTab" target="_blank">

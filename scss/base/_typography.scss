@@ -1,11 +1,4 @@
-$heading1: 5rem;
-$heading2: 3rem;
-$heading3: 2rem;
-$heading4: 1.5rem;
-$heading5: 1rem;
-$heading6: 0.6rem;
-
-$paragraph: 1.2rem;
+@use "../abstracts/variables" as *;
 
 body {
   font-family: "Roboto", sans-serif;
@@ -13,6 +6,7 @@ body {
 
 h1{
   font-size: $heading1;
+  margin-bottom: $margin;
 }
 
 h2 {
@@ -21,6 +15,7 @@ h2 {
 
 h3 {
   font-size: $heading3;
+  margin-top: $margin;
 }
 
 h4 {
@@ -33,8 +28,14 @@ h5 {
 
 h6 {
   font-size: $heading6;
+  margin-top: $margin;
 }
 
 p {
+  margin-top: $sm-margin;
   font-size: $paragraph;
+}
+
+.description {
+  margin: $margin;
 }
