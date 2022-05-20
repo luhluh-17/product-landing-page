@@ -39,3 +39,11 @@ p {
 .description {
   margin: $margin;
 }
+
+.secondary-text {
+  color: $secondary-text-color-dark;
+}
+
+.unfocused-text {
+  color: $unfocused-color;
+}

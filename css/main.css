@@ -48,6 +48,14 @@ p {
   margin: 1rem;
 }
 
+.secondary-text {
+  color: #3d3d3d;
+}
+
+.unfocused-text {
+  color: #a0a0a0;
+}
+
 .img-responsive {
   margin: 1rem;
   height: auto;
